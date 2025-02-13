@@ -14,6 +14,6 @@ app.listen(PORT, async(req,res)=>{
         await connection
         console.log(`server is running on port ${PORT}. and DB is connected`)
     } catch (error) {
-        console.log(`server is getting error `)
+        console.log(`server is getting error `, error)
     }
 })

@@ -13,7 +13,7 @@ UserRouter.post('/register', async(req,res)=>{
         await user.save();
         res.status(200).json("regiser done")
     } catch (error) {
-        res.status(400).json("regiser failed.")
+        res.status(400).json(error)
     }
 })
 
